@@ -8,6 +8,14 @@ body {
     margin: 0;
 }
 
+.body2{
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display:block;
+}
+
 .container {
     width: 300px;
 }
