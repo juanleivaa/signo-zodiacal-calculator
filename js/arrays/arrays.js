@@ -40,7 +40,7 @@ let provinciasArgentina = [
 ];
 
 
-
+console.log(provinciasArgentina.length)
 
 // //ARRAY.LENGHT
 // let array = [1,2,3,4,5]

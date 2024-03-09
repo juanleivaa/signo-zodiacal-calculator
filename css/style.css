@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+.sacar-decoration{
+    color: white;
+    text-decoration: none;
+}
+
 .body2{
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
@@ -17,8 +22,9 @@ body {
 }
 
 .container {
-    width: 300px;
+    width: 40%;
 }
+
 
 .form-control {
     width: 100%;
@@ -32,8 +38,9 @@ body {
     transition: opacity 0.5s;
 }
 
+
+
 .btn-primary {
-    margin-top: 20px;
     width: 100%;
     background-color: #000000 !important;
     border-color: #000000 !important;
