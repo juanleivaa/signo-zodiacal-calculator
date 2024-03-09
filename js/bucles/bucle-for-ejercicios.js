@@ -131,6 +131,62 @@ function ejercicio9(){
 }
 
 
+function ejercicio10() {
+
+    let resultados = [];
+    let ganador;
+    let maximo= 0;
+    let jugadores = ["Juan","Carla", "Jose", "Lucia"];
+
+    //i hace referencia a la rondas de tiros
+    for(let i = 1 ; i<= 5; i++) {
+
+
+
+        //j hace referncia a cada jugador
+        for (let j= 0 ; j < jugadores.length ; j++ ) {
+
+            if(resultados[j] == undefined) { 
+
+                resultados[j]= 0; 
+            } 
+
+
+
+            let dadoUno = Math.trunc((Math.random()) * 6) + 1;
+            let dadoDos= Math.trunc((Math.random()) * 6) + 1;
+            console.log('A ',jugadores[j] ,' Le salio un: ' , dadoUno ,' en el primer dado')
+            console.log('A ',jugadores[j] ,' Le salio un: ' , dadoDos ,' en el primer dado')
+            resultados[j] += dadoDos + dadoUno
+            console.log('Resultado ', resultados[j])
+
+        }
+
+
+    }
+
+    console.log('Resultados ', resultados)
+
+    for (let i= 0 ; i< jugadores.length; i++ ){
+    
+        console.log('El judador ' , jugadores[1], ' obtuvo ', resultados[i] )
+    
+        if(maximo < resultados[i] ) {
+    
+            maximo = resultados[i];
+            ganador = jugadores[i]
+        }
+    
+    }
+    
+    console.log('el ganador es: ', ganador, 'con un puntaje de: ', maximo )    
+
+
+
+}
+
+
+
 
 
 
