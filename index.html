@@ -10,45 +10,98 @@
 
 </head>
 <body>
-<div class="container text-center">
-    <h1>Signo del Zodiaco</h1>
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <select id="mes" class="form-select" onchange="cambiarDias()">
-                <option value="1">Enero</option>
-                <option value="2">Febrero</option>
-                <option value="3">Marzo</option>
-                <option value="4">Abril</option>
-                <option value="5">Mayo</option>
-                <option value="6">Junio</option>
-                <option value="7">Julio</option>
-                <option value="8">Agosto</option>
-                <option value="9">Septiembre</option>
-                <option value="10">Octubre</option>
-                <option value="11">Noviembre</option>
-                <option value="12">Diciembre</option>
-            </select>
-        </div>
-        <div class="col-auto">
-            <select id="dia" class="form-select">
-                <option value="1">1</option>
-                <!-- Resto de opciones generadas dinámicamente -->
-            </select>
-        </div>
-        <div class="col-auto">
-            <button onclick="calcularSigno()" class="btn btn-primary">Calcular</button>
-        </div>
-    </div>
-    <div id="result"></div>
-    <div class="row justify-content-center">
-        <a href="/pages/bucles/bucle-for.html">BUCLE - FOR</a>
-        <a href="/pages/bucles/bucle-while.html">BUCLE - WHILE</a>
-        <a href="/pages/bucles/dowhile-califications.html">BUCLE - DO WHILE</a>
-        <a href="/pages/arrays/arrays.html">ARRAYS</a>
-        <a href="/pages/functions/copaAmerica.html">FUNCTIONS</a>
-    </div>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container" style="justify-content: center; align-items: center;">
+              <a class="navbar-brand" href="#" style="position: relative;">
+                <img id="logo" src="/css/assets/javascript-logo-big.png" alt="Bootstrap" width="100px" height="100px">
+              </a>
+            </div>
+          </nav>
+    </header>
     
-</div>
+    
+    <main>
+        <section class="section-zodic" style="background-color: #ffc107; height:500px;">
+            <br><br><br>
+            <div class="container text-center">
+                <h1 class="p-3">Descubre tu signo del zodiaco</h1>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <select id="mes" class="form-select" onchange="cambiarDias()">
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <select id="dia" class="form-select">
+                            <option value="1">1</option>
+                            <!-- Resto de opciones generadas dinámicamente -->
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <button onclick="calcularSigno()" class="btn btn-outline-dark">Calcular</button>
+                    </div>
+                    <p id="result"></p>
+                </div>
+            </div>
+    
+            <br><br><br>
+        </section>
+
+        <hr>
+        <section>
+            <br><br><br>
+            <h1>Otras funcionalidades en javascript</h1>
+            <div class="card-group p-3">
+                <div class="card m-3 justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">BUCLE - FOR </h5>
+                    <p class="card-text">Es una estructura de control de flujo que se utiliza para repetir un bloque de código un número específico de veces. (El más utilizado)</p>             
+                    <button class="btn btn-warning"> <a href="/pages/bucles/bucle-for.html">Ver practica en consola</a></button>
+                  </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">BUCLE - WHILE </h5>
+                      <p class="card-text">Ejecuta un bloque de código mientras la condición especificada sea verdadera.</p>
+                      <button class="btn btn-warning">  <a href="/pages/bucles/bucle-while.html">Ver practica en consola</a> </button>
+                    </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">BUCLE - DO WHILE</h5>
+                      <p class="card-text">La diferencia clave es que do-while garantiza al menos una ejecución del bloque de código, mientras que while puede omitir la ejecución del bloque si la condición es falsa desde el principio. (No se usa mucho)</p>
+                      <button class="btn btn-warning"> <a href="/pages/bucles/dowhile-califications.html">Ver practica en consola</a> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group p-3">
+                <div class="card m-3 justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">ARRAYS</h5>
+                    <p class="card-text">Son estructuras de datos que nos permiten almacenar una colección de elementos de forma ordenada. Cada elemento en un array tiene un índice numérico que indica su posición dentro del arreglo (empezando por 0). Existen distintos métodos que se pueden utilizar</p>
+                    <button class="btn btn-warning"><a href="/pages/array/metodos-array.html">Ver practica en consola</a> </button>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+    </main>
+
 
 <script src="/js/switch/zodiac.js"></script>
 </body>

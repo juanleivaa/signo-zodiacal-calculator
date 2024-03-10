@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa america</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container" style="justify-content: center; align-items: center;">
+          <a class="navbar-brand" href="/index.html" style="position: relative;">
+            <img id="logo" src="/css/assets/javascript-logo-big.png" alt="Bootstrap" width="100px" height="100px">
+          </a>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section style="background-color: #ffc107;">
+      <h1>METODOS DE ARRAY</h1>
+      <h2>(En la consola)</h2>
+      <br>
+    </section>
+    <section>
+        <div class="card-group p-3">
+            <div class="card m-3 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">ARRAY.MAP</h5>
+                <p class="card-text">Este boton toma un array de valores en dólares y devuelve un nuevo array con los mismos valores convertidos a pesos (multiplicados por 150). Luego, muestra ambos arrays en la consola.</p>
+                <button class="btn btn-warning" onclick="arrayMap()">  Presione </button>
+              </div>
+            </div>
+            <div class="card m-3 justify-content-center">
+                <div class="card-body">
+                  <h5 class="card-title">ARRAY.FILTER</h5>
+                  <p class="card-text">Este boton ejecutará la función filtrarNumerosPares y mostrará en la consola los números originales y los números pares.</p>
+                  <button class="btn btn-warning" onclick="arrayFilter()">  Presione </button>
+                </div>
+            </div>
+            <div class="card m-3 justify-content-center">
+                <div class="card-body">
+                  <h5 class="card-title">ARRAY.FIND</h5>
+                  <p class="card-text">Este boton genera un array numeros con 10 números aleatorios entre 0 y 99. Luego, se utiliza el método .find() para encontrar el primer número mayor a 50 en ese array. Finalmente, se muestra en la consola tanto el array generado numeros como el número encontrado mayorA50.</p>
+                  <button class="btn btn-warning" onclick="encontrarNumeroMayorA50()">  Presione </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-group p-3">
+            <div class="card m-3 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">ARRAY.FINDINDEX</h5>
+                <p class="card-text">Este boton utiliza el método .findIndex() para encontrar el índice del primer número mayor a 50 en el array numeros. El método devuelve el índice del primer elemento que cumple con la condición especificada en la función de devolución de llamada.</p>
+                <button class="btn btn-warning" onclick="encontrarIndiceNumeroMayorA50()"> Presione </button>
+              </div>
+            </div>
+            <div class="card m-3 justify-content-center">
+                <div class="card-body">
+                  <h5 class="card-title">ARRAY.FILL</h5>
+                  <p class="card-text">Con este boton creamos un array vacío con 10 elementos usando new Array(10), y luego utilizamos el método .fill() para llenar ese array con el valor 5. Finalmente, mostramos en la consola el array resultante.</p>
+                  <button class="btn btn-warning" onclick="llenarArrayConValor()">  Presione </button>
+                </div>
+            </div>
+            <div class="card m-3 justify-content-center">
+                <div class="card-body">
+                  <h5 class="card-title">ARRAY.COPYWITHIN</h5>
+                  <p class="card-text">El boton copia los elementos desde el índice 0 hasta el índice 2 (excluido) del array y los pega a partir del índice 5, resultando en el array modificado [1, 2, 3, 4, 5, 1, 2, 3, 4, 5].</p>
+                  <button class="btn btn-warning" onclick="copiarParteDelArray()">Presione </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-group p-3">
+            <div class="card m-3 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">ARRAY.SOME</h5>
+                <p class="card-text">Este boton utiliza el método .some() para verificar si al menos un número en el array numeros es negativo. Si encuentra al menos un número negativo, la variable hayNegativos será true, de lo contrario será false. Dependiendo del resultado, se muestra un mensaje indicando si el array contiene o no números negativos.</p>
+                <button class="btn btn-warning" onclick="verificarSiHayNumerosNegativos()"> Presione </button>
+              </div>
+            </div>
+            <div class="card m-3 justify-content-center">
+                <div class="card-body">
+                  <h5 class="card-title">ARRAY.EVERY</h5>
+                  <p class="card-text">Este boton utiliza el método .every() para verificar si todos los números en el array numeros son mayores que 0. Si todos los números son positivos, la variable todosPositivos será true, de lo contrario será false. Dependiendo del resultado, se muestra un mensaje indicando si todos los números son positivos o no.</p>
+                  <button class="btn btn-warning" onclick="verificarSiTodosSonPositivos()">  Presione </button>
+                </div>
+            </div>
+            <div class="card m-3 justify-content-center">
+                <div class="card-body">
+                  <h5 class="card-title">ARRAY.REDUCE</h5>
+                  <p class="card-text">Este boton utilizamos el método .reduce() para sumar todos los números en el array numeros. El parámetro acumulador se utiliza para llevar la suma acumulada, comenzando en 0, y en cada iteración se suma el valor del elemento actual (numero) al acumulador. Al finalizar, el método devuelve la suma total de todos los elementos.</p>
+                  <button class="btn btn-warning" onclick="sumarElementos()">  Presione </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-group p-3">
+          <div class="card m-3 justify-content-center">
+            <div class="card-body">
+              <h5 class="card-title">ARRAY.LENGTH</h5>
+              <p class="card-text">Recorre un array de números y verifica si hay algún número negativo. Devuelve un mensaje indicando si el array contiene o no números negativos.</p>
+              <button class="btn btn-warning" onclick="verificarSiHayNumerosNegativosConLength()"> Presione </button>
+            </div>
+          </div>
+          <div class="card m-3 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">ARRAY.PUSH</h5>
+                <p class="card-text">Recorre un array de números y verifica si todos los números son mayores que cero. Devuelve un mensaje indicando si todos los números son positivos o no.</p>
+                <button class="btn btn-warning" onclick="verificarSiTodosSonPositivosConPush()">  Presione </button>
+              </div>
+          </div>
+          <div class="card m-3 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">ARRAY.SPLICE</h5>
+                <p class="card-text">Eliminar el primer elemento del array numeros y sumarlo a la variable suma, repitiendo este proceso hasta que el array esté vacío. Luego, muestra la suma total de todos los elementos.</p>
+                <button class="btn btn-warning" onclick="sumarElementosConSplice()">  Presione </button>
+              </div>
+          </div>
+      </div>
+      <div class="card-group p-3">
+        <div class="card m-3 justify-content-center">
+          <div class="card-body">
+            <h5 class="card-title">ARRAY.CONCAT</h5>
+            <p class="card-text">concatenar dos arrays en uno solo y luego muestra el array resultante.</p>
+            <button class="btn btn-warning" onclick="concatenarArrays()"> Presione </button>
+          </div>
+        </div>
+        <div class="card m-3 justify-content-center">
+            <div class="card-body">
+              <h5 class="card-title">ARRAY.POP</h5>
+              <p class="card-text">Utiliza el método pop para eliminar el último elemento de un array de números y muestra el array resultante después de la eliminación.</p>
+              <button class="btn btn-warning" onclick="eliminarUltimoElemento()">  Presione </button>
+            </div>
+        </div>
+        <div class="card m-3 justify-content-center">
+            <div class="card-body">
+              <h5 class="card-title">ARRAY.JOIN</h5>
+              <p class="card-text">Utiliza el método join para unir los elementos de un array de palabras en una sola cadena separada por un espacio y luego muestra la cadena resultante.</p>
+              <button class="btn btn-warning" onclick="unirElementos()">  Presione </button>
+            </div>
+        </div>
+    </div>
+    </section>
+  </main>
+  
+<script src="/js/array/metodos-array.js"></script>
+</body>
+</html>

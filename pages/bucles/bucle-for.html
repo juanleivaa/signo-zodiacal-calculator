@@ -3,14 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bucle-while</title>
+<title>Copa america</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container" style="justify-content: center; align-items: center;">
+          <a class="navbar-brand" href="/index.html" style="position: relative;">
+            <img id="logo" src="/css/assets/javascript-logo-big.png" alt="Bootstrap" width="100px" height="100px">
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section style="background-color: #ffc107;">
+            <h1>EJERCITACION CON FOR</h1>
+            <h2>(En la consola)</h2>
+            <br>
+        </section>
+        <section>
+            <div class="card-group p-3">
+                <div class="card m-3 justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">EJERCICIO 1</h5>
+                    <p class="card-text">Imprimir todos los digitos del 0 al 9</p>
+                    <button class="btn btn-warning" id="btnEjercicio1" onclick="ejercicio1()">Haz clic aquí</button>
+                  </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">EJERCICO 2</h5>
+                      <p class="card-text">Imprimir todos los numeros entre el 100 y el 199</p>
+                      <button class="btn btn-warning" id="btnEjercicio2" onclick="ejercicio2()">Haz clic aquí</button>
+                      
+                    </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">EJERCICIO 3</h5>
+                      <p class="card-text">Imprimir los numeros entre el 5 y el 20 saltando de tres en tres</p>
+                      <button class="btn btn-warning" id="btnEjercicio3" onclick="ejercicio3()">Haz clic aquí</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group p-3">
+                <div class="card m-3 justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">EJERCICIO 4</h5>
+                    <p class="card-text"> Requerir al usuario que ingrese un numero entero positivo e imprimir todos los numeros correlativos entre el ingresado por el usuario y uno menos del doble del mismo</p>
+                    <button class="btn btn-warning" id="btnEjercicio4" onclick="ejercicio4()">Haz clic aquí</button>
+                  </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">EJERCICIO 5</h5>
+                      <p class="card-text"> Escribir un programa que solicite al usuario una cantidad y luego itere la cantidad de veces dada. En cada iteracion solicitar al usuario que ingrese un numero. Al finalizar, mostrar la suma de todos los numeros registrados</p>
+                      <button class="btn btn-warning" id="btnEjercicio5" onclick="ejercicio5()">Haz clic aquí</button>
+                    </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">EJERCICIO 6</h5>
+                      <p class="card-text"> Solicitar al usuario que ingrese una frase y luego imprimir un listado de las vocales que aparecen en la frase, sin repetirlas</p>
+                      <button class="btn btn-warning" id="btnEjercicio6" onclick="ejercicio6()">Haz clic aquí</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group p-3">
+                <div class="card m-3 justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">EJERCICIO 7</h5>
+                    <p class="card-text"> Solicitar al usuario que ingrese una frase y luego imprimir la cantidad (numero) de vocales que aparecen en la frase</p>
+                    <button class="btn btn-warning" id="btnEjercicio7" onclick="ejercicio7()">Haz clic aquí</button>
+                  </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">EJERCICIO 8</h5>
+                      <p class="card-text"> Escribir un programa que muestre la sumatoria de todos los numeros entre el 0 y el 100</p>
+                      <button class="btn btn-warning" id="btnEjercicio8" onclick="ejercicio8()">Haz clic aquí</button>
+                    </div>
+                </div>
+                <div class="card m-3 justify-content-center">
+                    <div class="card-body">
+                      <h5 class="card-title">EJERCICIO 9</h5>
+                      <p class="card-text"> Escribir un programa que muestre la sumatoria de todos los multiplos de 3 encontrados entre el 0 y el 100</p>
+                      <button class="btn btn-warning" id="btnEjercicio9" onclick="ejercicio9()">Haz clic aquí</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group p-3">
+                <div class="card m-3 justify-content-center">
+                  <div class="card-body">
+                    <h5 class="card-title">EJERCICIO 10</h5>
+                    <p class="card-text"> Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la funcion math.random para obtener numeros aleatorios entre el 1 y el 6 para cada uno de los dados. Sumar el resultado de ambos y anotar en un array el numero de apariciones de dicha suma, repitiendo 5 veces esta operacion. El lanzamiento sera para cada jugador por turno tenemos que tener 3 jugadores, al final se debera hacer la suma</p>
+                    <button class="btn btn-warning" id="btnEjercicio9" onclick="ejercicio10()">Haz clic aquí</button>
+                  </div>
+                </div>
+            </div>    
+        </section>
 
-<a href="/pages/ejercitacion/ejercitacion.html">EJERCITACION </a>
+
+    </main>
+
 
 
     

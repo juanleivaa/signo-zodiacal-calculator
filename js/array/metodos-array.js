@@ -174,6 +174,102 @@ function sumarElementos() {
 }
 
 
+//===================================
+//=========ARRAY.LENGTH=============
+//====================================
+
+function verificarSiHayNumerosNegativosConLength() {
+    let numeros = [1, 2, 3, -4, 5];
+    let hayNegativos = false;
+
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] < 0) {
+            hayNegativos = true;
+            break;
+        }
+    }
+
+    if (hayNegativos) {
+        console.log("El array contiene números negativos.");
+    } else {
+        console.log("El array no contiene números negativos.");
+    }
+}
+
+//===================================
+//=========ARRAY.PUSH===============
+//====================================
+
+function verificarSiTodosSonPositivosConPush() {
+    let numeros = [1, 2, 3, 4, 5];
+    let todosPositivos = true;
+
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] <= 0) {
+            todosPositivos = false;
+            break;
+        }
+    }
+
+    if (todosPositivos) {
+        console.log("Todos los números son positivos.");
+    } else {
+        console.log("No todos los números son positivos.");
+    }
+}
+
+//===================================
+//=========ARRAY.SPLICE=============
+//====================================
+
+function sumarElementosConSplice() {
+    let numeros = [1, 2, 3, 4, 5];
+    let suma = 0;
+
+    while (numeros.length > 0) {
+        suma += numeros.splice(0, 1)[0];
+    }
+
+    console.log("La suma de todos los elementos es:", suma);
+}
+//===================================
+//=========ARRAY.CONCAT=============
+//====================================
+
+function concatenarArrays() {
+    let array1 = [1, 2, 3];
+    let array2 = [4, 5, 6];
+    let concatenados = array1.concat(array2);
+
+    console.log("Arrays concatenados:", concatenados);
+}
+
+//===================================
+//=========ARRAY.POP================
+//====================================
+
+function eliminarUltimoElemento() {
+    let numeros = [1, 2, 3, 4, 5];
+    numeros.pop();
+
+    console.log("Array después de eliminar el último elemento:", numeros);
+}
+
+//===================================
+//=========ARRAY.JOIN===============
+//====================================
+
+function unirElementos() {
+    let palabras = ["Hola", "mundo", "desde", "JavaScript"];
+    let frase = palabras.join(" ");
+
+    console.log("Frase unida:", frase);
+}
+
+
+
+
+
 
 
 
