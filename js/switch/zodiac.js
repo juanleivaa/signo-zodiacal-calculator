@@ -71,6 +71,13 @@ function calcularSigno() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerText = 'Tu signo del zodiaco es: ' + signo;
     resultDiv.style.opacity = '1';
+
+    // Agregar clases para animación
+    resultDiv.classList.add('show');
+    setTimeout(() => {
+        resultDiv.classList.remove('show');
+        resultDiv.style.opacity = '0'; // Opcional: hacer que desaparezca completamente
+    }, 3000); // Desaparecer después de 3 segundos (ajustar según sea necesario)
 }
 
 cambiarDias(); // Llamar a la función al cargar la página para establecer los días correctos

@@ -1,56 +1,79 @@
 body {
-    background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
-    display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
-.sacar-decoration{
-    color: white;
+.btn > a {
     text-decoration: none;
+    color: black;
 }
 
-.body2{
-    background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-    display:block;
+h1 {
+    padding-top: 30px;
 }
 
-.container {
-    width: 40%;
+.card {
+    border: 1px solid black !important;
+  }
+
+.section-zodic{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+/* Estilo inicial para la imagen */
+#logo {
+    transition: transform 0.3s; /* Agrega una transición suave al giro */
+  }
+  
+  /* Aplica la transformación de giro cuando el mouse pasa sobre la imagen */
+  #logo:hover {
+    transform: rotate(360deg); /* Gira la imagen 360 grados al pasar el mouse sobre ella */
+  }
 
-.form-control {
-    width: 100%;
-    margin-top: 10px;
+.text {
+    color: rgb(216, 216, 216);
+}
+  
+
+/*===================================
+==ANIMACIONES PARA EL CALCULATOR======
+====================================*/
+
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
+/* Animación de salida */
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Estilo inicial para el resultado */
 #result {
-    margin-top: 20px;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 15px;
 }
 
 
-
-.btn-primary {
-    width: 100%;
-    background-color: #000000 !important;
-    border-color: #000000 !important;
-    transition: background-color 0.3s;
+/* Agregar clase para mostrar el resultado con animación */
+#result.show {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 0.3s ease forwards;
 }
 
-.btn-primary:hover {
-    background-color: #555555 !important;
-    border-color: #555555 !important;
+/* Agregar clase para ocultar el resultado con animación */
+#result.hide {
+  animation: fadeOut 0.3s ease forwards;
 }
-
-
-
