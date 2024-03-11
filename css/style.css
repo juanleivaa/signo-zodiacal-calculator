@@ -1,20 +1,38 @@
 body {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn > a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 h2 {
   font-weight: 100;
+}
+
+ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+li {
+  text-align: left;
+  padding: 3px;
+}
+
+
+pre {
+  padding: 20px;
+  background-color: rgb(227, 227, 227);
+  text-align: left; 
+  font-weight: 200;
 }
 
 .card {

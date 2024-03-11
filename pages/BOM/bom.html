@@ -19,47 +19,66 @@
       </nav>
   </header>
     <main>
-
         <section style="background-color: #ffc107;">
             <h1>DOM</h1>
             <h2>(Browser Object Model)</h2>
             <br>
         </section>
         <section>
-            <div class="card-group p-3">
-                <div class="card m-3 justify-content-center">
-                  <div class="card-body">
-                    <h5 class="card-title">Funciones constructoras</h5>
-                    <p class="card-text">
-                      Las funciones constructoras son funciones en JavaScript que se utilizan para crear y inicializar objetos. Se suelen utilizar en conjunción con el operador new para crear nuevas instancias de un tipo de objeto específico. Cuando una función se utiliza como constructor (es decir, se llama con new), se creará un nuevo objeto y this dentro de la función hará referencia a ese nuevo objeto. </p>
-                      <button class="btn btn-success" id="btnEjercicio1" onclick="startCount()">Empezar a contar</button>
-                      <button class="btn btn-danger" id="btnEjercicio1" onclick="stopCount()">Parar contador</button>
-                      <button class="btn btn-outline-dark" id="btnEjercicio1" onclick="browserDetect()">Detectar navegador</button>
-                      <button class="btn btn-outline-warning" id="btnEjercicio1" onclick="showClock()">Hora actual</button>
 
 
+        <div class="card-group p-3">
+            <div class="card m-3 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">¿Qué es?, ¿para qué sirve?</h5>
+                <ul>
+                  <li>Representa el navegador web y la ventana del navegador como objetos.</li>
+                  <li>Proporciona objetos y métodos para interactuar con el navegador y su entorno, como la ubicación de la ventana, el historial de navegación y las barras de desplazamiento.</li>
+                  <li>Controla aspectos del navegador y la ventana, como redireccionar a otra página, abrir nuevas ventanas, y mostrar alertas y mensajes de confirmación.</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <section style="background-color: #ffc107;">
+          <h1>Algunos ejemplos</h1>
+          <br>
+      </section>
+
+      <section>
+
+        <div class="card-group p-3">
+          <div class="card m-3 justify-content-center">
+            <div class="card-body">
+              <h5 class="card-title">DETECTAR NAVEGADOR Y VERSION</h5>
+              <button class="btn btn-warning" id="btnEjercicio1" onclick="browserDetect()">Detectar navegador</button>
+              <div>
+                <div id="browserName" class="display-4">
+                    <strong>
+
+                    </strong>
+                </div>
+                <div id="browserImg">
                     
-                    </div>
-                    <div>
-                        <div id="browserName" class="display-4">
-                            <strong>
-
-                            </strong>
-                        </div>
-                        <div id="browserImg">
-                            
-                        </div>
-                    </div>
-                    <div>
-                        <div id="clock" class="display-4">
-                            <strong>
-
-                            </strong>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+            </div>
+          </div>
+          <div class="card m-3 justify-content-center">
+            <div class="card-body">
+              <h5 class="card-title">RELOJ</h5>
+              <button class="btn btn-warning" id="btnEjercicio1" onclick="showClock()">Mostrar</button>
+              <div>
+                <div id="clock" class="display-4">
+                    <strong>
+
+                    </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
         </section>
 
     </main>
