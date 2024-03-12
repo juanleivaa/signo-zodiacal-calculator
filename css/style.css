@@ -11,7 +11,9 @@ body {
 
 h1 {
   padding-top: 30px;
+  padding-bottom: 15px;
 }
+
 
 h2 {
   font-weight: 100;
@@ -99,3 +101,66 @@ pre {
 #result.hide {
   animation: fadeOut 0.3s ease forwards;
 }
+
+
+
+/*===================================
+====ESTILOS PARA JUEGO DE DADOS======
+====================================*/
+
+.juegoDados {
+  background-color: #ffc107;
+}
+
+#start {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  transition: transform 1.5s ease;
+  background-color: #ffc107;
+  border-radius: 0%;
+  border: 0;
+  font-size: 75px; /* Tamaño del texto */
+  padding: 10px 10px; /* Espaciado interno */
+  
+}
+
+#start:hover {
+  transform: scale(1.1);
+  animation: colorChange 0.5s infinite;
+   /* Cambiar por el color que prefieras */
+}
+
+
+
+@keyframes colorChange {
+  0% {
+    color: rgb(255, 0, 0); /* Rojo */
+  }
+  50% {
+    color: rgb(0, 255, 0); /* Verde */
+  }
+  100% {
+    color: rgb(0, 0, 255); /* Azul */
+  }
+}
+
+
+
+ol {
+  margin-bottom: 35px;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  list-style-type: none;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+ol li:before {
+  content: "•";
+  margin-right: 5px;
+}
+

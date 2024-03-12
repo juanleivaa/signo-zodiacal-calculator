@@ -6,6 +6,11 @@
 <title>Copa america</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<!--===================================
+=========fuente para start=============
+====================================-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
+
 
 </head>
 <body>
@@ -19,28 +24,39 @@
       </nav>
   </header>
     <main>
-
         <section style="background-color: #ffc107;">
-            <h1>POO</h1>
-            <h2>Programación orientada a objetos</h2>
+            <h1>DOM</h1>
+            <h2>(Document Object Model)</h2>
             <br>
         </section>
         <section>
-            <div class="card-group p-3">
-                <div class="card m-3 justify-content-center">
-                  <div class="card-body">
-                    <h5 class="card-title">Funciones constructoras</h5>
-                    <p class="card-text">
-                      Las funciones constructoras son funciones en JavaScript que se utilizan para crear y inicializar objetos. Se suelen utilizar en conjunción con el operador new para crear nuevas instancias de un tipo de objeto específico. Cuando una función se utiliza como constructor (es decir, se llama con new), se creará un nuevo objeto y this dentro de la función hará referencia a ese nuevo objeto. </p>
-                      <button class="btn btn-warning" id="btnEjercicio1" onclick="ejercitacionWhile()">Haz clic aquí</button>
-                  </div>
-                </div>
-            </div>
+          <div class="container">
+            <h1 class="mt-5">Juego de Dados</h1>
+            <aside>
+              <p>
+                Para jugar, simplemente haz clic en el botón "Start" para ingresar los nombres de los jugadores y comenzar el juego. Luego, cada jugador hará clic en su botón respectivo para tirar los dados y acumular puntos. ¡Diviértete jugando!
+              </p>
+              <ol>
+                <li>Al comenzar el juego, se solicita el nombre de cada uno de los tres jugadores.</li>
+                <li>Cada jugador, en su turno, hace clic en su botón correspondiente para tirar los dados. El jugador actual obtiene puntos equivalentes a la suma de los valores de los dos dados.</li>
+                <li>El juego consta de cinco rondas. Después de cada ronda, se muestra el nombre del jugador, los valores de los dados y los puntos acumulados hasta ese momento.</li>
+                <li>El jugador que acumule la mayor cantidad de puntos al final de las cinco rondas es declarado ganador.</li>
+              </ol>
+
+            </aside>
         </section>
-
+        <section class="juegoDados">
+          <br>
+          <button id="start" class="btn btn-success mt-4" onclick="startGame()">START </button>
+            
+            <div id="players" class="mt-4"></div>
+            <br><br><br>
+            <button id="player1" style="border: 0; background-color: #ffc107; color: #ffc107;" class="btn border-0" disabled> </button>
+            <button id="player2" style="border: 0; background-color: #ffc107; color: #ffc107;" class="btn  border-0" disabled></button>
+            <button id="player3" style="border: 0; background-color: #ffc107; color: #ffc107;" class="btn  border-0" disabled></button>
+          </div>
+        </section>
     </main>
-
-
 <script src="/js/DOM/dom.js"></script>
 </body>
 </html>
