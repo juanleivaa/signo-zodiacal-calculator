@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--===================================
+    =========conexion css==================
+    ====================================-->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container" style="justify-content: center; align-items: center;">
+              <a class="navbar-brand" href="/index.html" style="position: relative;">
+                <img id="logo" src="/css/assets/javascript-logo-big.png" alt="Bootstrap" width="100px" height="100px">
+              </a>
+            </div>
+          </nav>
+      </header>
+
+
+    <main>
+        <section>
+            <section style="background-color: #ffc107;">
+                <h1>SELECTORS</h1>
+                <h2>(Por: ID, clases, query, etc)</h2>
+                <br>
+            </section>
+        </section>
+        <section>
+            <div class="container">
+                <h1>Carrito de Compras</h1>
+                <div class="input-group mb-3">
+                    <input type="text" id="newProductInput" class="form-control" placeholder="Nuevo producto">
+                    <div class="input-group-append">
+                        <button type="button" id="addProductBtn" class="btn btn-primary">Agregar</button>
+                    </div>
+                </div>
+                <input type="text" id="searchInput" class="form-control mb-3" placeholder="Buscar producto">
+                <ul id="productList" class="list-group">
+                    <!-- Productos se agregan dinámicamente aquí -->
+                </ul>
+            </div>
+        
+            <!-- Modal para modificar producto -->
+            <div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modifyModalLabel">Modificar Producto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" id="modifyInput" class="form-control">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" id="saveModifyBtn" class="btn btn-primary">Guardar Cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+        <!--===================================
+        =========CONEXIONES JAVASCRIPT=========
+        ====================================-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+        <!-- <script src="/js/selectors/selectors.js"></script> -->
+        <script src="/js/selectors/selectors.js"></script>
+</body>
+</html>
+"

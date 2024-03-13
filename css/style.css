@@ -164,3 +164,65 @@ ol li:before {
   margin-right: 5px;
 }
 
+
+
+
+
+/*===================================
+=========ESTILOS PARA MAIL=============
+====================================*/
+
+#email {
+  max-width: 600px; /* Limita el ancho del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  padding: 20px; /* Agrega espacio interior al formulario */
+  border: 1px solid #ccc; /* Agrega un borde al formulario */
+  border-radius: 10px; /* Agrega esquinas redondeadas al formulario */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Agrega espacio entre los elementos */
+}
+
+.input-group-text {
+  background-color: #f0f0f0; /* Cambia el color de fondo del span */
+  border: none; /* Elimina el borde del span */
+  border-radius: 5px 0 0 5px; /* Agrega esquinas redondeadas en el lado izquierdo */
+}
+
+.form-control {
+  border-radius: 0 5px 5px 0; /* Agrega esquinas redondeadas en el lado derecho */
+}
+
+.btn {
+  transition: transform 0.3s ease; /* Agrega una transición al botón */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Escala el botón al hacer hover */
+}
+
+
+/*===================================
+=========FETCH USERS=================
+====================================*/
+
+#users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+#users div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+
+
+#users div:hover {
+  transform: scale(1.1); /* Escala del 110% al pasar el mouse */
+}
+
