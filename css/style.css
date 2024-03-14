@@ -19,6 +19,7 @@ h2 {
   font-weight: 100;
 }
 
+
 ul {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -224,5 +225,51 @@ ol li:before {
 
 #users div:hover {
   transform: scale(1.1); /* Escala del 110% al pasar el mouse */
+}
+
+
+
+
+
+
+
+.weather-container {
+  background-color: #f8f9fa; /* Color de fondo */
+  border: 1px solid #dee2e6; /* Borde */
+  border-radius: 0.25rem; /* Radio de borde */
+  max-width: 300px; /* Establece el ancho máximo de la card */
+  margin: 0 auto; /* Centra la card en el contenedor */
+}
+
+.weather-wrapper {
+  padding: 1rem; /* Espaciado interno */
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-temp {
+  font-size: 2rem; /* Tamaño de fuente para la temperatura */
+}
+
+.weather-city {
+  font-size: 1.5rem; /* Tamaño de fuente para el nombre de la ciudad */
+}
+
+.card-img-top {
+  height: 100px;
+  width: 100px;
+  position: right;
+}
+
+.col-7 {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.col-5 {
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }
 
